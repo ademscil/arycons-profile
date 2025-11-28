@@ -1,0 +1,11 @@
+[build]
+  command = "composer install --no-dev --optimize-autoloader"
+  publish = "public"
+
+[[plugins]]
+  package = "netlify-plugin-php"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.php"
+  status = 200
