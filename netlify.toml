@@ -1,5 +1,5 @@
 [build]
-  command = "composer install --no-dev --optimize-autoloader"
+  command = "npm install --no-save netlify-plugin-php@^1.0.4 && composer install --no-dev --optimize-autoloader"
   publish = "public"
 
 [[plugins]]
