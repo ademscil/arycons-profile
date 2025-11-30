@@ -77,5 +77,13 @@
             </div>
         </div>
     </div>
-    <!-- TODO: Ganti daftar pengalaman dengan pengalaman dan proyek real CV. Arycon's -->
+    <div class="card border-0 shadow-sm card-hover mt-4">
+        <div class="card-body d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+            <div>
+                <h5 class="card-title mb-1">Unduh Daftar Pengalaman</h5>
+            <p class="text-muted mb-0">Dokumen lengkap pengalaman perusahaan tersedia dalam format DOC.</p>
+            </div>
+            <a class="btn btn-primary" href="{{ asset('files/DAFTAR_PENGALAMAN_PERUSAHAAN.doc') }}" download>Download DOC</a>
+        </div>
+    </div>
 @endsection

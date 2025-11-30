@@ -28,7 +28,7 @@
             <div class="card h-100 border-0 shadow-sm card-hover text-center">
                 <div class="card-body">
                     <div class="mb-3">
-                        <img src="{{ asset('images/profile-placeholder.svg') }}" alt="Foto Pesero Komanditer" class="rounded-circle border" style="width: 88px; height: 88px; object-fit: cover;">
+                        <img src="{{ asset('images/profile/raidin_profile.jpeg') }}" alt="Foto Pesero Komanditer" class="rounded-circle border" style="width: 88px; height: 88px; object-fit: cover;">
                     </div>
                     <div class="text-success fs-3 mb-2"><i class="bi bi-people"></i></div>
                     <h5 class="card-title text-uppercase text-muted small mb-1">Pesero Komanditer</h5>
@@ -45,8 +45,11 @@
                     </div>
                     <div class="text-warning fs-3 mb-2"><i class="bi bi-gear"></i></div>
                     <h5 class="card-title text-uppercase text-muted small mb-1">Staf Teknik</h5>
-                    <p class="card-text fw-semibold mb-1">Heriady, ST</p>
-                    <p class="card-text fw-semibold mb-0">Raidin Warmansyah</p>
+                    <ul class="list-unstyled mb-2 fw-semibold">
+                        <li>Heriady, ST</li>
+                        <li>Raidin Warmansyah</li>
+                    </ul>
+                    <p class="text-muted small mb-0">Daftar dapat ditambah sesuai kebutuhan tim.</p>
                 </div>
             </div>
         </div>
@@ -54,13 +57,12 @@
             <div class="card h-100 border-0 shadow-sm card-hover text-center">
                 <div class="card-body">
                     <div class="mb-3">
-                        <img src="{{ asset('images/profile-placeholder.svg') }}" alt="Foto Manajer/Administrasi" class="rounded-circle border" style="width: 88px; height: 88px; object-fit: cover;">
+                        <img src="{{ asset('images/profile/eko_profile.jpeg') }}" alt="Foto Manajer/Administrasi" class="rounded-circle border" style="width: 88px; height: 88px; object-fit: cover;">
                     </div>
                     <div class="text-info fs-3 mb-2"><i class="bi bi-clipboard-check"></i></div>
                     <h5 class="card-title text-uppercase text-muted small mb-1">Manajer/Administrasi</h5>
-                    <p class="card-text fw-semibold mb-0">Eko Widodo, ST</p>
+                    <p class="card-text fw-semibold mb-0">Eko Widigdo, SE</p>
                     <p class="text-muted small mb-0">Administrasi Tender</p>
-                    <!-- TODO: Isi nama pengelola administrasi -->
                 </div>
             </div>
         </div>

@@ -11,16 +11,17 @@
     </div>
     <div class="row g-4 mb-4">
         <div class="col-md-5">
-            <div class="card h-100 border-0 shadow-sm card-hover">
-                <div class="card-body">
-                    <h5 class="card-title">Informasi Kontak</h5>
-                    <p class="mb-2"><strong>Alamat:</strong> Jl. Menara Dalam No. 88 RT/RW 03/03, Pangkalpinang</p>
-                    <p class="mb-2"><strong>Telepon:</strong> (0717) 421481 / 437425</p>
-                    <p class="mb-2"><strong>Email:</strong> arycons2012@gmail.com</p>
-                    <p class="mb-0"><strong>Email alternatif:</strong> heriadi_bangka@yahoo.com</p>
+                    <div class="card h-100 border-0 shadow-sm card-hover">
+                        <div class="card-body">
+                            <h5 class="card-title">Informasi Kontak</h5>
+                            <p class="mb-2"><strong>Alamat:</strong> Jl. Menara Dalam No. 88 RT/RW 03/03, Pangkalpinang</p>
+                            <p class="mb-2"><strong>Telepon:</strong> (0717) 421481 / 437425</p>
+                            <p class="mb-2"><strong>HP/WA:</strong> 081804101968</p>
+                            <p class="mb-2"><strong>Email:</strong> arycons2012@gmail.com</p>
+                            <p class="mb-0"><strong>Email alternatif:</strong> heriadi_bangka@yahoo.com</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
         <div class="col-md-7">
             <div class="card h-100 border-0 shadow-sm card-hover">
                 <div class="card-body">
