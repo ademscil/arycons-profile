@@ -15,7 +15,7 @@
     <style>
         body {
             font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
-            background: linear-gradient(135deg, #f4f6fb 0%, #eef2ff 50%, #f7f9ff 100%);
+            background: url('{{ asset('images/background-website.jpeg') }}') center/cover no-repeat fixed;
             min-height: 100vh;
         }
         .navbar {

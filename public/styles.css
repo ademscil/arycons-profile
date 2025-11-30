@@ -1,6 +1,6 @@
 body {
     font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
-    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 25%, #a18cd1 65%, #fbc2eb 100%);
+    background: url('images/background-website.jpeg') center/cover no-repeat fixed;
     min-height: 100vh;
     color: #1f2532;
 }
