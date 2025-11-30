@@ -54,6 +54,13 @@ body {
     transform: translateY(-4px);
     box-shadow: 0 12px 30px rgba(102, 57, 182, 0.18);
 }
+.avatar-lg {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
 footer {
     background: linear-gradient(90deg, rgba(13,110,253,0.9), rgba(111,66,193,0.9));
     color: #fffbf5;

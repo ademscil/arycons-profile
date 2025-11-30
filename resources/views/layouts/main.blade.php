@@ -61,6 +61,13 @@
             transform: translateY(-4px);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         }
+        .avatar-lg {
+            width: 82px;
+            height: 82px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid #ddd;
+        }
         footer {
             background: #ffffff;
         }
