@@ -28,7 +28,7 @@
             <div class="card h-100 border-0 shadow-sm card-hover text-center">
                 <div class="card-body">
                     <div class="mb-3">
-                        <img src="{{ asset('images/profile/raidin_profile.jpeg') }}" alt="Foto Pesero Komanditer" class="rounded-circle border" style="width: 88px; height: 88px; object-fit: cover;">
+                        <img src="{{ asset('images/profile/raidin_profile.jpeg') }}" alt="Foto Pesero Komanditer" class="rounded-circle border" style="width: 88px; height: 88px; object-fit: cover; object-position: center 35%; transform: scale(1.08);">
                     </div>
                     <div class="text-success fs-3 mb-2"><i class="bi bi-people"></i></div>
                     <h5 class="card-title text-uppercase text-muted small mb-1">Pesero Komanditer</h5>
@@ -57,7 +57,7 @@
             <div class="card h-100 border-0 shadow-sm card-hover text-center">
                 <div class="card-body">
                     <div class="mb-3">
-                        <img src="{{ asset('images/profile/eko_profile.jpeg') }}" alt="Foto Manajer/Administrasi" class="rounded-circle border" style="width: 88px; height: 88px; object-fit: cover;">
+                        <img src="{{ asset('images/profile/eko_profile.jpeg') }}" alt="Foto Manajer/Administrasi" class="rounded-circle border" style="width: 88px; height: 88px; object-fit: cover; object-position: center 35%; transform: scale(1.08);">
                     </div>
                     <div class="text-info fs-3 mb-2"><i class="bi bi-clipboard-check"></i></div>
                     <h5 class="card-title text-uppercase text-muted small mb-1">Manajer/Administrasi</h5>
