@@ -29,7 +29,7 @@
                 <div class="card-body">
                     <div class="mb-3 d-flex justify-content-center">
                         <div style="width:88px;height:88px;border-radius:50%;overflow:hidden;border:1px solid #ddd;">
-                            <img src="{{ asset('images/profile/raidin_profile.jpeg') }}" alt="Foto Pesero Komanditer" style="width:100%;height:100%;object-fit:cover;object-position:center 70%;transform:scale(1.12);">
+                            <img src="{{ asset('images/profile/raidin_profile.jpeg') }}" alt="Foto Pesero Komanditer" style="width:100%;height:100%;object-fit:cover;object-position:center 45%;">
                         </div>
                     </div>
                     <div class="text-success fs-3 mb-2"><i class="bi bi-people"></i></div>
@@ -60,7 +60,7 @@
                 <div class="card-body">
                     <div class="mb-3 d-flex justify-content-center">
                         <div style="width:88px;height:88px;border-radius:50%;overflow:hidden;border:1px solid #ddd;">
-                            <img src="{{ asset('images/profile/eko_profile.jpeg') }}" alt="Foto Manajer/Administrasi" style="width:100%;height:100%;object-fit:cover;object-position:center 70%;transform:scale(1.12);">
+                            <img src="{{ asset('images/profile/eko_profile.jpeg') }}" alt="Foto Manajer/Administrasi" style="width:100%;height:100%;object-fit:cover;object-position:center 45%;">
                         </div>
                     </div>
                     <div class="text-info fs-3 mb-2"><i class="bi bi-clipboard-check"></i></div>
