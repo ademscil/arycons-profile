@@ -61,6 +61,19 @@
             transform: translateY(-4px);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         }
+        .avatar-chip {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7));
+            color: #d48806;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
         footer {
             background: #ffffff;
         }

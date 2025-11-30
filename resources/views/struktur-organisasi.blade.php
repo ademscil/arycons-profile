@@ -42,18 +42,19 @@
         <div class="col-md-6 col-lg-3">
             <div class="card h-100 border-0 shadow-sm card-hover text-center">
                 <div class="card-body">
-                    <div class="mb-3 d-flex justify-content-center">
-                        <div style="width:88px;height:88px;border-radius:50%;overflow:hidden;border:1px solid #ddd;">
-                            <img src="{{ asset('images/profile-placeholder.svg') }}" alt="Foto Staf Teknik" style="width:100%;height:100%;object-fit:cover;object-position:center;">
+                    <div class="mb-3 d-flex flex-wrap justify-content-center gap-3">
+                        <div class="text-center">
+                            <div class="avatar-chip">H</div>
+                            <div class="small fw-semibold mt-1">Heriady, ST</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="avatar-chip">R</div>
+                            <div class="small fw-semibold mt-1">Raidin Warmansyah</div>
                         </div>
                     </div>
                     <div class="text-warning fs-3 mb-2"><i class="bi bi-gear"></i></div>
                     <h5 class="card-title text-uppercase text-muted small mb-1">Staf Teknik</h5>
-                    <ul class="list-unstyled mb-0 fw-semibold">
-                        <li>Heriady, ST</li>
-                        <li>Raidin Warmansyah</li>
-                        <li class="fw-normal text-muted">Tambah anggota lain sesuai kebutuhan.</li>
-                    </ul>
+                    <p class="text-muted small mb-0">Tambah anggota lain sesuai kebutuhan.</p>
                 </div>
             </div>
         </div>
