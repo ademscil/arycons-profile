@@ -3,7 +3,7 @@
 @section('content')
     <p class="section-title mb-2">Layanan &amp; Jejak</p>
     <h1 class="mb-4">Pengalaman Perusahaan</h1>
-    <p class="text-muted">Berikut beberapa fokus dan contoh pengalaman utama CV. Arycons (7 tahun terakhir):</p>
+    <p class="text-muted">Berikut beberapa fokus dan contoh pengalaman utama CV. Arycon's (7 tahun terakhir):</p>
 
     <div class="row g-3">
         <div class="col-md-6">
@@ -77,5 +77,5 @@
             </div>
         </div>
     </div>
-    <!-- TODO: Ganti daftar pengalaman dengan pengalaman dan proyek real CV. Arycons -->
+    <!-- TODO: Ganti daftar pengalaman dengan pengalaman dan proyek real CV. Arycon's -->
 @endsection

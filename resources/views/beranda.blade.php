@@ -1,12 +1,12 @@
 @extends('layouts.main')
 
 @section('content')
-    <!-- TODO: Ganti teks beranda dengan profil singkat asli CV. Arycons -->
+    <!-- TODO: Ganti teks beranda dengan profil singkat asli CV. Arycon's -->
     <div class="p-5 mb-5 rounded-4 shadow-sm hero-card">
         <div class="row align-items-center gy-4">
             <div class="col-lg-7 position-relative">
                 <span class="badge bg-primary-subtle text-primary mb-3">Konsultan Konstruksi</span>
-                <h1 class="display-5 fw-bold mb-3">CV. Arycons</h1>
+                <h1 class="display-5 fw-bold mb-3">CV. Arycon's</h1>
                 <p class="fs-5 text-muted mb-4">Konsultan konstruksi dan manajemen proyek berbasis di Pangkalpinang sejak 2004.</p>
                 <div class="d-flex flex-wrap gap-3">
                     <a class="btn btn-primary btn-lg px-4" href="{{ route('tentang') }}">Lihat Profil</a>

@@ -1,51 +1,60 @@
 body {
     font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
-    background: linear-gradient(135deg, #f4f6fb 0%, #eef2ff 50%, #f7f9ff 100%);
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 25%, #a18cd1 65%, #fbc2eb 100%);
     min-height: 100vh;
+    color: #1f2532;
 }
 .navbar {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    background: linear-gradient(90deg, rgba(13,110,253,0.92), rgba(111,66,193,0.92));
 }
-.nav-link.active {
-    color: #0d6efd !important;
+.navbar .nav-link {
+    color: #eef2ff !important;
 }
-.nav-link {
-    transition: color 0.2s ease, transform 0.2s ease;
+.navbar .nav-link.active {
+    color: #fffbf5 !important;
 }
-.nav-link:hover {
+.navbar .nav-link:hover {
     transform: translateY(-1px);
+    color: #ffe08a !important;
+}
+.navbar-brand span {
+    color: #fffbf5;
 }
 .hero-card {
     position: relative;
     overflow: hidden;
-    background: radial-gradient(circle at 10% 20%, rgba(13,110,253,0.12), transparent 35%), radial-gradient(circle at 90% 10%, rgba(32,201,151,0.12), transparent 30%), #ffffff;
-    border: 1px solid rgba(13, 110, 253, 0.08);
+    background: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.3), transparent 35%), radial-gradient(circle at 85% 10%, rgba(255,255,255,0.25), transparent 30%), linear-gradient(135deg, rgba(255,255,255,0.75), rgba(255,255,255,0.4));
+    border: 1px solid rgba(255, 255, 255, 0.4);
 }
 .hero-card::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(120deg, rgba(13,110,253,0.08), transparent 40%);
+    background: linear-gradient(120deg, rgba(255,255,255,0.24), transparent 50%);
     pointer-events: none;
 }
 .section-title {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     font-weight: 600;
-    color: #0d6efd;
+    color: #6639b6;
     font-size: 0.9rem;
 }
 .card {
-    border: 1px solid rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
 }
 .card-hover {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .card-hover:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 12px 30px rgba(102, 57, 182, 0.18);
 }
 footer {
-    background: #ffffff;
+    background: linear-gradient(90deg, rgba(13,110,253,0.9), rgba(111,66,193,0.9));
+    color: #fffbf5;
 }

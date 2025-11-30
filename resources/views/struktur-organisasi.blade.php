@@ -5,7 +5,7 @@
         <div>
             <p class="section-title mb-2">Tim Inti</p>
             <h1 class="mb-2">Struktur Organisasi</h1>
-            <p class="text-muted mb-0">Struktur organisasi sederhana CV. Arycons.</p>
+            <p class="text-muted mb-0">Struktur organisasi sederhana CV. Arycon's.</p>
         </div>
         <div class="badge bg-primary text-white fs-6 py-2 px-3">Kolaboratif &amp; Adaptif</div>
     </div>

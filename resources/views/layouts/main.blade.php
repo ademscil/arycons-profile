@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CV. Arycons</title>
+    <title>CV. Arycon's</title>
     <link rel="icon" type="image/png" sizes="256x256" href="{{ asset('images/logo.png') }}">
     <link rel="shortcut icon" type="image/png" sizes="256x256" href="{{ asset('images/logo.png') }}">
     <link rel="apple-touch-icon" sizes="256x256" href="{{ asset('images/logo.png') }}">
@@ -73,8 +73,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="{{ route('beranda') }}">
-                <img src="{{ asset('images/logo.png') }}" alt="Logo CV. Arycons" class="me-2" style="height: 32px;">
-                <span class="fw-semibold">CV. Arycons</span>
+                <img src="{{ asset('images/logo.png') }}" alt="Logo CV. Arycon's" class="me-2" style="height: 32px;">
+                <span class="fw-semibold">CV. Arycon's</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -115,7 +115,7 @@
 
     <footer class="bg-white border-top py-3">
         <div class="container text-center">
-            © {{ date('Y') }} CV. Arycons. Seluruh hak cipta dilindungi.
+            © {{ date('Y') }} CV. Arycon's. Seluruh hak cipta dilindungi.
         </div>
     </footer>
 
