@@ -61,6 +61,26 @@
             transform: translateY(-4px);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         }
+        .hero-card {
+            animation: fadeInUp 0.8s ease both;
+        }
+        .card {
+            animation: fadeInUp 0.9s ease both;
+        }
+        .card:nth-child(2) { animation-delay: 0.05s; }
+        .card:nth-child(3) { animation-delay: 0.1s; }
+        .card:nth-child(4) { animation-delay: 0.15s; }
+        .card:nth-child(5) { animation-delay: 0.2s; }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
         .avatar-lg {
             width: 82px;
             height: 82px;
