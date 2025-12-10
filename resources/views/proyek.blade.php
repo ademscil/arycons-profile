@@ -29,7 +29,7 @@
                                 <td>{{ $project['lokasi'] }}</td>
                                 <td><span class="badge bg-primary-subtle text-primary">{{ $project['tahun'] }}</span></td>
                                 <td>{{ $project['klien'] }}</td>
-                                <td>{{ $project['nilai'] }}</td>
+                                <td class="text-nowrap">{{ $project['nilai'] }}</td>
                             </tr>
                         @endforeach
                     </tbody>
