@@ -50,8 +50,13 @@
             </div>
             <div class="card border-0 shadow-sm card-hover">
                 <div class="card-body">
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <input id="searchInput" type="text" class="form-control" placeholder="Cari proyek / lokasi / klien / tahun">
+                        </div>
+                    </div>
                     <div class="table-responsive">
-                        <table class="table align-middle">
+                        <table class="table align-middle" id="projectsTable">
                             <thead class="table-light">
                                 <tr>
                                     <th>Nama Proyek</th>
@@ -275,6 +280,7 @@
                             </tbody>
                         </table>
                     </div>
+                    <div class="d-flex justify-content-center mt-3" id="pagination"></div>
                 </div>
             </div>
         </div>
@@ -289,6 +295,67 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.getElementById('footerYear').textContent = new Date().getFullYear();
+        // Client-side search & pagination for static page
+        (function () {
+            const perPage = 10;
+            const table = document.getElementById('projectsTable');
+            const tbody = table.querySelector('tbody');
+            const allRows = Array.from(tbody.querySelectorAll('tr'));
+            const searchInput = document.getElementById('searchInput');
+            const pagination = document.getElementById('pagination');
+            let filtered = allRows.slice();
+            let currentPage = 1;
+
+            function render() {
+                const start = (currentPage - 1) * perPage;
+                const rows = filtered.slice(start, start + perPage);
+                tbody.innerHTML = '';
+                rows.forEach(r => tbody.appendChild(r));
+
+                const totalPages = Math.max(1, Math.ceil(filtered.length / perPage));
+                const nav = document.createElement('nav');
+                const ul = document.createElement('ul');
+                ul.className = 'pagination';
+
+                function add(label, page, disabled = false, active = false) {
+                    const li = document.createElement('li');
+                    li.className = `page-item ${disabled ? 'disabled' : ''} ${active ? 'active' : ''}`;
+                    const a = document.createElement('a');
+                    a.href = '#';
+                    a.className = 'page-link';
+                    a.textContent = label;
+                    a.onclick = (e) => {
+                        e.preventDefault();
+                        if (!disabled && currentPage !== page) {
+                            currentPage = page;
+                            render();
+                        }
+                    };
+                    li.appendChild(a);
+                    ul.appendChild(li);
+                }
+
+                add('«', Math.max(1, currentPage - 1), currentPage === 1);
+                for (let i = 1; i <= totalPages; i++) {
+                    add(i, i, false, i === currentPage);
+                }
+                add('»', Math.min(totalPages, currentPage + 1), currentPage === totalPages);
+
+                pagination.innerHTML = '';
+                nav.appendChild(ul);
+                pagination.appendChild(nav);
+            }
+
+            function applyFilter() {
+                const q = searchInput.value.trim().toLowerCase();
+                filtered = allRows.filter(r => r.textContent.toLowerCase().includes(q));
+                currentPage = 1;
+                render();
+            }
+
+            searchInput.addEventListener('input', applyFilter);
+            render();
+        })();
     </script>
 </body>
 </html>
