@@ -11,8 +11,13 @@
     </div>
     <div class="card border-0 shadow-sm card-hover">
         <div class="card-body">
+            <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                    <input id="searchInput" type="text" class="form-control" placeholder="Cari proyek / lokasi / klien / tahun">
+                </div>
+            </div>
             <div class="table-responsive">
-                <table class="table align-middle">
+                <table class="table align-middle" id="projectsTable">
                     <thead class="table-light">
                         <tr>
                             <th>Nama Proyek</th>
@@ -42,3 +47,25 @@
     </div>
     <!-- TODO: Tambahkan semua proyek dari dokumen kualifikasi agar tabel lengkap -->
 @endsection
+
+@push('scripts')
+<script>
+    (function () {
+        const table = document.getElementById('projectsTable');
+        if (!table) return;
+        const tbody = table.querySelector('tbody');
+        const allRows = Array.from(tbody.querySelectorAll('tr'));
+        const searchInput = document.getElementById('searchInput');
+
+        function applyFilter() {
+            const q = searchInput.value.trim().toLowerCase();
+            tbody.innerHTML = '';
+            allRows
+                .filter(r => r.textContent.toLowerCase().includes(q))
+                .forEach(r => tbody.appendChild(r));
+        }
+
+        searchInput.addEventListener('input', applyFilter);
+    })();
+</script>
+@endpush
